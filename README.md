@@ -1,141 +1,113 @@
-#Scenario-Based Report Development Utilizing Diverse Prompting Techniques
-Experiment:
-Eg : Designing an AI-Powered Chatbot for Customer Support
-Objective: The goal of this experiment is to design and develop an AI-powered chatbot that can handle customer inquiries, provide support, and improve customer experience in a retail environment. Create prompts using various AI prompting techniques to guide your experiment, data collection, analysis, and report creation.
+# Exno.3-Scenario-Based Report Development Utilizing Diverse Prompting Techniques
+# DATE: 08/03/2025
+# REGISTER NUMBER : 212222060292
+# Aim:
+To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. In this experiment, we will employ different prompt patterns to guide the development process of the chatbot, ranging from basic task-oriented prompts to more complex, persona-driven prompts.
 
+# Algorithm:
+# 1. Direct Instruction Prompts
+3 Objective:
+Guide the chatbot to respond concisely to customer inquiries.
 
-# Designing an AI-Powered Virtual Assistant for Healthcare Clinics
-1.	Aim:
-The objective of this project is to develop an AI-powered virtual assistant for healthcare clinics to streamline appointment scheduling, automate patient communication, and provide health-related information. By utilizing diverse prompting techniques, the assistant will be optimized to enhance clinic efficiency and patient satisfaction.
-The virtual assistant will address common patient concerns, manage appointment workflows, send reminders, and offer first-level support on general health inquiries—all while maintaining compliance with healthcare data standards.
+# Prompt Pattern:
+```
+Prompt: "When a customer asks for the status of their order, reply with: 'Your order is currently being processed and will be delivered by [date].'"
+```
+# Interaction:
+```
+Customer: What is the status of my order?
+Chatbot: Your order is currently being processed and will be delivered by [date].
+```
+# 2. Contextual Prompting
+# Objective:
+Incorporate specific context to provide detailed answers based on the user’s previous interaction.
 
+# Prompt Pattern:
+```
+Prompt: "If the customer previously mentioned that they haven’t received their order, say, 'I see that you mentioned your order hasn't arrived yet. Let me check the details for you and get back shortly.'"
+```
+# Example Interaction:
+```
+Customer: I haven't received my order yet.
+Chatbot: I see that you mentioned your order hasn't arrived yet. Let me check the details for you and get back shortly.
+```
+# 3. Persona-Based Prompting:
+# Objective:
+Design the chatbot to adopt a specific persona, making the interaction more engaging.
 
-# 2.	Procedure
-2.1	Define the Scenario and Use Case
-1.	Purpose:
-To reduce administrative burden on healthcare staff while improving patient experience through a 24/7 virtual assistant.
-2.	Target Audience:
-•	Patients: Primary users needing appointment booking, medical FAQs, and reminders.
-•	Healthcare Staff: Users looking to automate routine tasks like patient follow-ups and scheduling.
- 
-•	Clinic Administrators: Users aiming to monitor usage and optimize operations.
-3.	Main Objectives:
-•	Offer immediate assistance to patient queries.
-•	Minimize no-shows with automated reminders.
-•	Ensure compliance with healthcare data privacy standards (e.g., HIPAA).
-4.	Goals:
-•	Seamless integration with clinic management systems.
-•	Support for multilingual and voice-based interaction.
-•	Secure data handling and patient confidentiality.
+# Prompt Pattern:
+```
+Prompt: "Pretend you are a friendly, helpful customer service representative. Use a conversational tone, such as 'Hey there! I’m here to help with any questions you might have. Let’s get your issue sorted!'"
+```
+# Example Interaction:
+```
+Customer: I'm having trouble with my new product.
+Chatbot: Hey there! I’m here to help with any questions you might have. Let’s get your issue sorted! What seems to be the problem?
+```
+# 4. Few-Shot Prompting
+# Objective:
+Teach the AI how to respond using a few examples, enabling it to generalize for similar situations.
 
+# Prompt Pattern:
+```
+Prompt: "Here are some examples of how to handle technical questions:
+'My phone isn't charging.' → 'Have you tried using a different cable? If that doesn’t work, it may be an issue with the port.'
+'The screen is flickering.' → 'It sounds like a display issue. Have you tried restarting the device?'
+Now, respond to: 'My app keeps crashing.'"
+```
+# Example Interaction:
+```
+Customer: My app keeps crashing.
+Chatbot: It sounds like the app is unstable. Have you tried closing all other apps running in the background? Sometimes that can free up resources. If the problem continues, you might want to try restarting your device or reinstalling the app.
+```
+# 5. Chain of Thought Prompting
+# Objective:
+Use a step-by-step reasoning approach for resolving more complex or technical issues.
 
-2.2	Prompt Patterns for Design Stages
-a.	Idea Generation Prompts
-Objective: Identify key features aligned with the healthcare domain.
-Example Prompt:
-“What features should an AI assistant include to support outpatient care in a small clinic?”
-Key Features Identified:
-•	Real-time appointment booking and cancellation.
-•	Symptom checker for general conditions.
-•	Automated post-consultation follow-ups.
-•	Multilingual support and voice response.
+# Prompt Pattern:
+```
+Prompt: "When a customer reports their laptop overheating, guide them through the following steps:
+Ask if they are using the laptop on a soft surface.
+Suggest moving the laptop to a flat, hard surface for better airflow.
+Ask if they’ve cleaned the vents recently.
+Recommend restarting the device to see if the issue persists.
+Now, solve: 'My laptop fan is making a loud noise.'"
+```
+# Example Interaction:
+```
+Customer: My laptop fan is making a loud noise.
+Chatbot: I understand your laptop fan is making a loud noise. To help me figure out what's going on, could you tell me if you are currently using the laptop on a soft surface like a bed or a pillow? Also, have you had a chance to clean the vents recently? Sometimes dust buildup can cause the fan to work harder.
+```
+# 6. Instruction with Constraints
+# Objective:
+Instruct the chatbot to provide assistance while adhering to specific constraints (e.g., response length or tone).
 
+# Prompt Pattern:
+```
+Prompt: "Respond to order inquiries in no more than 50 words and avoid using technical jargon. For example, 'Your order is on the way and should arrive by [date]. Feel free to reach out if you need anything else.'"
+```
+# Example Interaction:
+```
+Customer: When will my order arrive?
+Chatbot: Your order is on the way and should arrive by [date]. Feel free to reach out if you need anything else.
+```
+# 7. Reflective Prompting
+# Objective:
+Ensure that the chatbot reflects the user’s query back to them before providing a response, reducing misunderstandings.
 
-b.	Persona and Context Prompts
-Objective: Define interaction style for patients and clinic staff.
-Example Prompt:
- 
-“What personality and tone should a healthcare chatbot have to ensure trust and professionalism?”
-Outcomes:
+# Prompt Pattern:
+```
+Prompt: "When a customer asks for help, first reflect their question back to them. For example, if they ask 'How can I reset my password?' respond with 'You're asking how to reset your password, correct? Here’s how you can do it.'"
+```
+# Prompt: 
+```
+"When a customer asks for help, first reflect their question back to them. For example, if they ask 'How can I reset my password?' respond with 'You're asking how to reset your password, correct? Here’s how you can do it.'"
+```
+# Example Interaction:
+```
+Customer: How do I track my order?
+Chatbot: You're asking how to track your order, correct? You can usually find your tracking information in the shipping confirmation email we sent you. Alternatively, you can log in to your account on our website and view the order details there
+```
+# Result:
+The various types of Prompts were executed successfully, demonstrating different techniques to guide the AI chatbot's responses for product troubleshooting, order tracking, and general inquiries. Each prompting method elicited a distinct behavior from the simulated chatbot, highlighting the importance of prompt engineering in shaping the AI's interaction style and the quality of its assistance.Thus, the Prompts were executed successfully.
 
-•	Patients: Calm, reassuring, and informative tone.
-•	Staff: Clear, prompt, and efficient communication.
-•	Shared Context: Maintain professionalism, avoid medical advice without disclaimers.
-
-
-c.	Exploratory Prompts
-Objective: Analyze infrastructure and regulatory constraints.
-Example Prompt:
-“What are the infrastructure and security needs for deploying a healthcare virtual assistant?”
-Insights:
-•	End-to-end encryption for all communications.
-•	Integration with clinic EHR (Electronic Health Records) systems.
-•	Cloud-hosted with regional data compliance settings.
-
-
-d.	Refinement Prompts
-Objective: Improve accessibility and inclusiveness.
-Example Prompt:
-“How can we ensure the chatbot interface is accessible to elderly patients?”
-Suggestions:
-•	Large fonts and intuitive icons.
-•	Option for voice-based navigation.
- 
-•	Simplified language toggle.
-
-
-e.	Scenario Testing Prompts
-Objective: Simulate patient interactions for validation.
-Example Prompt:
-“Simulate a conversation where a patient books an appointment and asks for COVID safety guidelines.”
-Testing Results:
-•	Accurately confirms appointment and shares guidelines.
-•	Offers option to reschedule or speak to staff.
-
-
-f.	Error Handling Prompts
-Objective: Design fallback and escalation strategies.
-Example Prompt:
-“What should the assistant do if it doesn’t understand a patient query?”
-Solution:
-•	Apologize and rephrase the query.
-•	Offer to connect with clinic staff or send an email.
-•	Suggest similar FAQs for help.
-
-
-3.	Implementation Plan Steps:
-1.	Platform Selection:
-o	Choose platforms like Microsoft Azure Bot Services or Google Cloud Dialogflow CX.
-o	Train NLP models with healthcare datasets.
- 
-2.	System Integration:
-o	Link with clinic’s calendar and EHR systems.
-o	Enable secure login with two-factor authentication for staff access.
-3.	Feature Development:
-o	Build appointment and FAQ modules.
-o	Add real-time notifications and multilingual voice/text support.
-4.	Testing:
-o	Run simulations with real-life scenarios.
-o	Perform load testing during peak clinic hours.
-5.	Deployment:
-o	Integrate into clinic websites and WhatsApp channels.
-o	Set up a monitoring dashboard for real-time logs and analytics.
-
-
-4.	Evaluation and Feedback Collection Feedback Prompts:
-•	“How helpful was the assistant in resolving your query?”
-•	“Were the reminders timely and easy to understand?”
-Findings:
-•	Positive Feedback: High satisfaction with 24/7 availability.
-•	Suggestions: Include prescription refill reminders and emergency contact routing.
-
-
-5.	Deliverables
-5.1	Detailed Report:
-•	Described project scope, infrastructure, and user roles.
-•	Documented prompt-driven design process with rationale.
-5.2	Prototype/System Outline:
- 
-•	Developed	a	virtual	assistant	prototype	with	voice/text	interface, appointment handling, and medical FAQ modules.
-5.3	Prompt Effectiveness Summary:
-•	Most	Effective	Prompt	Type:	Scenario	Testing	Prompts	ensured reliability across use cases.
-•	Outcome: Better contextual understanding and patient satisfaction.
-5.4	User Testing Results and Improvement Plan:
-•	Results: 90% of patients found the assistant helpful.
-•	Planned Enhancements:
-1.	Integrate prescription refill management.
-2.	Improve multilingual voice accuracy.
-
-
-6.	Conclusion
-This report showcases the strategic use of prompting techniques in designing an AI assistant tailored for healthcare clinics. With its modular features and scenario- based refinements, the assistant enhances patient experience and clinic productivity. Future upgrades will focus on wider health system integration and accessibility improvements to further the assistant's impact.
