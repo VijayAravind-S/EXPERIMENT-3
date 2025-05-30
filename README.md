@@ -1,4 +1,4 @@
-# Exno.3-Scenario-Based Report Development Utilizing Diverse Prompting Techniques
+# EXPERIMENT-3-Scenario-Based Report Development Utilizing Diverse Prompting Techniques
 # DATE: 
 # REGISTER NUMBER : 212222060292
 # Aim:
